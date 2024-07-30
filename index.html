@@ -3,53 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cherryfolio Design Services</title>
     <link rel="stylesheet" href="css\style.css">
 </head>
 
 <body>
     <nav>
         <header>
-            <div class="logo-icon"></div>
+            <div class="logo-icon"><img src="assets/logo.webp" style="width:48px;"></div>
         </header>
 
         <section class="nav-container">
             <a class="nav-item">Home</a>
-            <a class="nav-item">Our Package</a>
-            <a class="nav-item">Call Us</a>
+            <a class="nav-item">Services</a>
+            <a class="nav-item">Contact Me</a>
         </section>
     </nav>
 
     <main>
         <article class="main-title">
             <header>
-            <h1>Your trusted travel agency</h1>
+                <img src="assets/logotext.svg" width="400px">
             </header>
-            <p>Your happiness is our happiness</p>
+            <h4>Providing All-in-One Design Solutions</h4>
         </article>
+
+        <br>
 
         <section class="main-content">
             <article class="main-content-item">
-                <div class="main-content-banner"></div>
-
-                <div class="main-item">
-                    <div class="item-icon"></div>
-                    <div>
-                        <h3>Nama</h3>
-                        <p>Lorem ipsum</p>
+                <div class="main-content-banner">
+                    <div class="banner-container">
+                    <img src="../assets/bannerimg1.png" alt="bannerimg1" class="banner-image active">
+                    <img src="../assets/bannerimg2.jpg" alt="bannerimg2" class="banner-image">
+                    <img src="../assets/bannerimg3.png" alt="bannerimg3" class="banner-image">
                     </div>
                 </div>
 
-            </article>
-            <form class="main-content-item">
-                <input type="text">
-                <button type="submit">Submit</button>
+                <br>
+                <div class="main-item">
+                    <p><i>“Lightning speed fast, understands concept requests easily. Definitely recommend, will be back for more future projects.”</i>
+                        —智悦移民 WiseJoy Immigration Services CA</p>
+                </div>
+                <br>
 
+                <div class="profile-item">
+                    <div class="profile-icon"></div>
+                    <div class="profile-item" id="profile-content">
+                        <h3>Cherrylita Ollyvia</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+            <hr>
+
+            <div class="main-item">
+                <h5 style="text-align: left;">I'm a UI/UX designer aspiring to bring designs to life with enhanced interactivity and functionality, ensuring a seamless and engaging experience for users from concept to implementation.</h5>
+                <br>
+                <div class="highlight-item">
+                    <div class="item-icon"></div>
+                    <div>
+                        <p>Skilled Problem Solver: My creativity and problem-solving skills help me find innovative solutions to challenges.<p>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="item-icon"></div>
+                    <div>
+                        <p>Self-Motivated and Adaptable: I’m eager to learn and adapt quickly, keeping up with the latest trends and technologies.<p>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="item-icon"></div>
+                    <div>
+                        <p>Creative and Punctual: I combine creativity with punctuality, ensuring timely delivery and effective communication.<p>
+                    </div>
+                </div>
+            </div>              
+
+            </article>
+
+            <form class="form-properties" name="inquiryForm" onsubmit="return validateForm()" method="post">
+                <h2>Get in Touch</h2>
+                <h6>Name</h6>
+                <input type="text" placeholder="Your Name" id="name-input" name="name">
+                <h6>Email</h6>
+                <input type="text" placeholder="Your Email" id="email-input" name="email">
+                <h6>Message</h6>
+                <input type="text" placeholder="Your Message" id="message-input" name="message">
+                <br>
+                <br>
+                <input class="button" type="submit" value="Submit">
             </form>
             </section>
-        </section>
+
+            <article class="main-title">
+                <header>
+                <h1>Design Services</h1>
+                </header>
+                <p>Providing All-in-One Design Solutions</p>
+            </article>
+
+            <section class="services-content">
+                <article class="services-content-item">
+                    <div class="service-item">
+                        <div class="service-icon"><img src="assets/service-1.svg"></div>
+                        <div>
+                            <h3>UI/UX Design</h3>
+                            <p>Design visually appealing and user-friendly interfaces for web and mobile apps to enhance user interaction.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><img src="assets/service-2.svg"></div>
+                        <div>
+                            <h3>UX Research & Audit</h3>
+                            <p>Conduct usability tests to gather user feedback and optimize the functionality and ease of use of digital products.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><img src="assets/service-3.svg"></div>
+                        <div>
+                            <h3>Multimedia Integration</h3>
+                            <p>Creation of video, audio, and interactive features to create engaging and immersive experiences.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <hr>
+            <section class="services-content">
+                <article class="services-content-item">
+                    <div class="service-item">
+                        <div class="service-icon"><img src="assets/service-4.svg"></div>
+                        <div>
+                            <h3>Social Media Design</h3>
+                            <p>Design graphics and visual elements for digital platforms, including icons, buttons, banners, and animations.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><img src="assets/service-5.svg"></div>
+                        <div>
+                            <h3>Brand Identity Design</h3>
+                            <p>Create a cohesive and memorable visual branding elements that reflect the brand’s identity across digital platforms.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><img src="assets/service-6.svg"></div>
+                        <div>
+                            <h3>Brand Collateral Design</h3>
+                            <p>Design cohesive and impactful brand collateral i.e., logos, business cards, brochures, promotional materials, etc.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <br>
+            <article class="main-title">
+                <header>
+                <h1>Let's discuss your next project.</h1>
+                </header>
+                <p>Please click the button below to send an email.</p>
+                <br>
+                <button class="cta-button">Contact Me</button>
+            </article>
+            <br>
+
+        <footer>
+                <header>
+                    <img src="assets/logotext.svg" width="180px">
+                </header>
+        
+                <section class="nav-container">
+                    <a class="nav-item"><p>Terms of Service</p></a>
+                    <a class="nav-item"><p>Privacy Policy</p></a>
+                    <a class="nav-item"><p>Copyright 2024 Cherrylita Ollyvia</p></a>
+                </section>
+        </footer>
+
     </main>
+
     
+    <script src="js/script.js"></script>
 </body>
 
 </html>

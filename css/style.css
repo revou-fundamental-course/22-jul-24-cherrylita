@@ -1,5 +1,68 @@
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../fonts/LibreBaskerville-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 nav {
-    border: 1px solid;
+    border: 0px solid;
     display: flex;
     justify-content: space-between;
     padding: 12px;
@@ -7,10 +70,10 @@ nav {
 }
 
 .logo-icon {
-    border: 1px solid;
-    background-image: url(https://picsum.photos/200);
-    height: 25px;
-    width: 50px;
+    border: 0px solid;
+    background-image: url(assets/header-logo.png);
+    height: 48px;
+    width: 48px;
     background-size: cover;
 }
 
@@ -19,12 +82,22 @@ nav {
 }
 
 .nav-item {
-    border: solid;
+    border: 0px solid;
     padding: 8px;
+    margin: 4px;
+    min-width: 120px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    color: #616161;
 }
 
 .main-title {
     text-align: center;
+    padding: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: 0px solid black;
 }
 
 .main-content {
@@ -32,56 +105,286 @@ nav {
 }
 
 .main-content-item {
-    border: 0px solid;
-    width: 100%;
-    height: 250px;
+    border: 0px solid green;
+    width: 360%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-
-form {
-    border: 1px solid;
-    width: 100%;
-    height: 250px;
-}
-
-.main-content-banner {
-    border: 1px solid;
-    width: 100%;
-    height: 150px;
-    background-image: url(https://picsum.photos/150);
-}
-
-.item-icon {
-    height: 25px;
-    width: 25px;
-    border: 1px solid;
-    background-image: url(https://picsum.photos/25);
-    border-radius: 50%;
+    margin-right: 36px;
 }
 
 .main-item {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction:column;
+    border: 0px solid red;
+    max-width: 80%;
+}
+
+.main-content-banner {
+    border: 0px solid purple;
+    width: 100%;
+    height: 240px;
+    background-image: url('../assets/bannerimg.png');
+    border-radius: 12px;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%; 
+    height: 240px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+}
+
+.banner-image.active {
+    left: 0;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.banner-image.previous {
+    left: 0;
+    opacity: 1;
+    transform: translateX(-100%);
+}
+
+.banner-image.next {
+    left: 0;
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+.item-icon {
+    max-height: 16px;
+    min-width: 16px;
+    border: 0px solid;
+    background-image: url('../assets/check-circle.svg');
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-top: 16px;
+}
+
+.profile-icon {
+    height: 40px;
+    width: 40px;
+    background-image: url('../assets/cat.jpg'); object-fit: contain;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.profile-item {
+    display: flex;
+    flex-direction:row;
+    align-content: center;
+}
+
+#profile-content {
+    flex-direction:column;
+    border: 0px solid blue;
+    align-content: center;
+    line-height: 12px;
+}
+
+.highlight-item {
+    display: flex;
+    border: 0px solid aquamarine;
+}
+
+.form-properties {
+    display: flex;
+    flex-direction: column;
+    border: 0px solid;
+    width: 160%;
+    padding: 36px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
 }
 
 input {
-    width: 75%;
     padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: monospace;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
 }
 
 button {
-    width: 75%;
-    height: 32px;
-    background-color: aqua;
-    border: none;
+    height: 54px;
+    background-color: #333333;
+    color: white;
+    padding: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
 }
+
+.button {
+    height: 54px;
+    background-color: #333333;
+    color: white;
+    padding: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+}
+
+.cta-button {
+    height: 64px;
+    min-width: 300px;
+    background-color: #333333;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+}
+
+body {
+    padding-left:10%;
+    padding-right: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+hr {
+    border: 2px solid #eeeeee;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 120px
+
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.services-content-item {
+    border: 0px solid pink;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-icon {
+    max-height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    margin-right : 16px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.service-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:row;
+    width: 280px;
+    height: 140px;
+    padding: 36px;
+    margin: 12px;
+    color: #333333;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 2px 4px 1000px rgba(122, 122, 122, 0.2);;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    color: #616161;
+}
+
+h2 {
+    margin-top: 0px;
+    padding-top: 8px;
+    margin-bottom: 0px;
+    font-family: 'Libre Baskerville', serif;
+    color: #616161;
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    color: #616161;
+}
+
+h4 {
+    font-family: 'Libre Baskerville', serif;
+    color: #616161;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+h5 {
+    margin-top: 0px;
+    padding-top: 8px;
+    margin-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    color: #616161;
+}
+
+h6 {
+    margin-top: 0px;
+    padding-top: 24px;
+    margin-bottom: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: #616161;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #616161;
+}
+
+footer {
+    border: 0px solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+}
+
+::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    color:#b5b5b5
+}
+
+
+
