@@ -174,8 +174,7 @@ nav {
     max-height: 16px;
     min-width: 16px;
     border: 0px solid;
-    background-image: url('assets/check-circle.svg');
-    border-radius: 50%;
+    background-image: url('../assets/check-circle.svg');
     margin-right: 12px;
     margin-top: 16px;
 }
